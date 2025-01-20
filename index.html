@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Paradise Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+     <!-- Favicon for the website -->
+     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+     <!-- Bootstrap CSS from CDN -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     
+     <!-- Google Fonts (Optional) -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+     
+     <!-- FontAwesome for Social Icons (Optional) -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+         header {
+            background-image: url('https://www.cypressgreen.in/blog/wp-content/uploads/2021/03/food-2048x1366.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            padding: 10px, 100px ;
+            color: white;
+        }
+
+        .nav-link {
+            font-size: 18px;
+            color: white !important;
+        }
+
+        .nav-item:hover {
+            background-color: #f8b400;
+        }
+
+        .breadcrumb {
+            background-color: #f8f9fa;
+        }
+
+        .breadcrumb-item a {
+            color: #6c757d;
+        }
+
+        .breadcrumb-item.active {
+            color: #f8b400;
+        }
+
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .feature-card {
+            border: none;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+
+        .feature-card-title {
+            font-size: 24px;
+            color: #333;
+            margin-top: 15px;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .rating-stars {
+            color: #f8b400;
+        }
+
+        .pagination {
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-dark text-white py-4 text-center">
+        <h1>Welcome to Foodie Paradise Blog</h1>
+        <p>Explore the world of flavors, recipes, and culinary delights</p>
+    </header>
+
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Foodie Paradise</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <!-- Home Link: Navigate to home.html -->
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>Welcome to Foodie Paradise</h1>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <!-- Recipes Section (Not Centered) -->
+                    <div class="col-md-4">
+                        <div class="card feature-card">
+                            <img src="https://i.pinimg.com/originals/a1/ef/90/a1ef9089a195911bc5a96747fc4dc804.jpg" alt="Recipe 1">
+                            <div class="card-body">
+                                <h5 class="feature-card-title">Delicious Desserts</h5>
+                                <p>Indulge in sweet treats like cakes, cookies, and pastries.</p>
+                               <!-- Button wrapped in an anchor tag for navigation -->
+                               <a href="https://food.ndtv.com/recipes/desserts-recipes" class="btn btn-primary">Explore Desserts</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card">
+                            <img src="https://www.eatwell101.com/wp-content/uploads/2016/08/healthy-recipes.jpg" alt="Recipe 2">
+                            <div class="card-body">
+                                <h5 class="feature-card-title">Healthy Meals</h5>
+                                <p>Try our healthy meal options, packed with nutrients and flavor.</p>
+                               <!-- Button wrapped in an anchor tag for navigation -->
+                                 <a href="https://www.foodnetwork.com/healthy/packages/healthy-every-week/quick-and-simple/healthy-dinners-in-40-minutes-or-less" class="btn btn-primary">Explore Desserts</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card">
+                            <img src="https://www.techicy.com/wp-content/uploads/2022/09/best-top-snacks-.jpeg" alt="Recipe 3">
+                            <div class="card-body">
+                                <h5 class="feature-card-title">Quick Snacks</h5>
+                                <p>Enjoy quick and easy snacks perfect for on-the-go eating.</p>
+                                <!-- Button wrapped in an anchor tag for navigation -->
+                                <a href="https://www.foodnetwork.com/healthy/packages/healthy-every-week/quick-and-simple/healthy-dinners-in-40-minutes-or-less" class="btn btn-primary">Explore Desserts</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagination for Reviews -->
+    <nav aria-label="Reviews pagination">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item active">
+                <a class="page-link" href="#">previous</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="Delicious Desserts">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="Healthy Meals">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="Quick Snacks">3</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Reviews Section (Centered) -->
+    <div class="container text-center" id="reviews">
+        <h2>Share Your Review</h2>
+        <div class="contact-form">
+            <!-- Rating Section -->
+            <div class="mb-3">
+                <label for="rating" class="form-label">Rating</label>
+                <div id="rating" class="rating-stars">
+                    <span class="fa fa-star" data-index="0"></span>
+                    <span class="fa fa-star" data-index="1"></span>
+                    <span class="fa fa-star" data-index="2"></span>
+                    <span class="fa fa-star" data-index="3"></span>
+                    <span class="fa fa-star" data-index="4"></span>
+                </div>
+            </div>
+            <!-- Review Form -->
+            <form>
+                <div class="mb-3">
+                    <label for="reviewName" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="reviewName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="reviewMessage" class="form-label">Your Review</label>
+                    <textarea class="form-control" id="reviewMessage" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Review</button>
+
+
+    
+        </form>
+    </div>
+</div>
+
+   <!-- Footer Section (Centered) -->
+<footer class="bg-dark text-white py-4 text-center">
+    
+    <!-- Contact Details -->
+    <div class="contact-details mb-3">
+        <p><strong>Contact Us:</strong></p>
+        <p><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</p>
+        <p><i class="fas fa-envelope"></i> contact@foodieparadise.com</p>
+    </div>
+
+    <!-- Social Media Links -->
+    <div>
+        <!-- Instagram Link -->
+        <a href="https://www.instagram.com/yourprofile" target="_blank" class="text-white mx-3">
+            <i class="fab fa-instagram fa-2x"></i> <!-- Instagram Icon -->
+        </a>
+        
+        <!-- Telegram Link -->
+        <a href="https://t.me/yourprofile" target="_blank" class="text-white mx-3">
+            <i class="fab fa-telegram fa-2x"></i> <!-- Telegram Icon -->
+        </a>
+
+        <!-- WhatsApp Link -->
+        <a href="https://wa.me/yourphonenumber" target="_blank" class="text-white mx-3">
+            <i class="fab fa-whatsapp fa-2x"></i> <!-- WhatsApp Icon -->
+        </a>
+        
+        <!-- Facebook Link -->
+        <a href="https://www.facebook.com/yourprofile" target="_blank" class="text-white mx-3">
+            <i class="fab fa-facebook fa-2x"></i> <!-- Facebook Icon -->
+        </a>
+        
+        <!-- Twitter Link -->
+        <a href="https://twitter.com/yourprofile" target="_blank" class="text-white mx-3">
+            <i class="fab fa-twitter fa-2x"></i> <!-- Twitter Icon -->
+        </a>
+        
+        <!-- LinkedIn Link -->
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-white mx-3">
+            <i class="fab fa-linkedin fa-2x"></i> <!-- LinkedIn Icon -->
+        </a>
+        <p>&copy; 2025 Foodie Paradise Blog. All rights reserved.</p>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5"
+        // Handle star rating interaction
+        const stars = document.querySelectorAll('.rating-stars .fa-star');
+        stars.forEach((star, index) => {
+            star.addEventListener('click', () => {
+                stars.forEach((s, i) => {
+                    if (i <= index) {
+                        s.classList.add('checked');
+                    } else {
+                        s.classList.remove('checked');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

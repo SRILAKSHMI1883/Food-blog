@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Paradise - Home</title>
+<style>/* Reset some default browser styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Body styles */
+    body {
+        font-family: Arial, sans-serif;
+        color: white;
+    }
+    
+    /* Full-Screen Background Image */
+    .hero {
+        background-image: url('https://www.cypressgreen.in/blog/wp-content/uploads/2021/03/food-2048x1366.jpg'); /* Replace with your image URL */
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Full screen */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+    
+    /* Dark overlay to make text readable */
+    .hero:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* 50% transparency */
+    }
+    
+    /* Hero content styles */
+    .hero-content {
+        z-index: 2;
+        position: relative;
+        color: white;
+        padding: 20px;
+    }
+    
+    /* Hero heading */
+    .hero h1 {
+        font-size: 50px;
+        font-weight: bold;
+    }
+    
+    /* Hero paragraph */
+    .hero p {
+        font-size: 24px;
+        margin: 20px 0;
+    }
+    
+    /* CTA Button */
+    .cta-button {
+        padding: 15px 30px;
+        background-color: #f8b400;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    
+    .cta-button:hover {
+        background-color: #ff9c00;
+    }
+    </style>
+</head>
+<body>
+
+    <!-- Full-Screen Image Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Foodie Paradise</h1>
+            <p>Your ultimate destination for delicious recipes and culinary adventures!</p>
+            <a href="food blog.html" class="cta-button">Explore Recipes</a>
+        </div>
+    </section>
+
+</body>
+</html>
